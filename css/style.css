@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: #3a3a3a;
+}
+
+body {
+  background: #c1cfff2e;
+}
+
+.container div p, .container div button, .container .first-div textarea, .container .second-div ul.winner {
+  background: white;
+  border: 1px solid #c1cfff;
+}
+
+.container {
+  width: 90%;
+  max-width: 730px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 100px;
+}
+
+.container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 270px;
+      flex-basis: 270px;
+}
+
+.container div p {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: system-ui;
+}
+
+.container div button {
+  margin: 25px auto;
+  width: 150px;
+  height: 35px;
+  border-radius: 10px;
+  color: #4b73ff;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container div button[disabled=""] {
+  border-color: #c1c1c1;
+  color: #c1c1c1;
+}
+
+.container div button[disabled=""]:hover {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.container div button:hover {
+  background: #c1cfff;
+  border-radius: 30px;
+}
+
+.container .first-div textarea {
+  width: 100%;
+  height: 170px;
+  border-radius: 15px;
+  resize: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  font-family: system-ui;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.container .first-div textarea:focus {
+  -webkit-box-shadow: 0px 0px 15px 0px #c1cfff;
+          box-shadow: 0px 0px 15px 0px #c1cfff;
+}
+
+.container .first-div p.all-names {
+  text-align: justify;
+}
+
+.container .second-div .display {
+  text-align: center;
+}
+
+.container .second-div ul.winner {
+  list-style: none;
+  border-radius: 15px;
+}
+
+.container .second-div ul.winner li {
+  border-top: 1px solid #c1cfff;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: system-ui;
+}
+
+.container .second-div ul.winner .brdnone {
+  border: none;
+}
+
+.container .second-div ul.winner .winner1 {
+  color: darkgoldenrod;
+}
+
+.container .second-div ul.winner .winner2 {
+  color: green;
+}
+
+.container .second-div ul.winner .winner3 {
+  color: #787878;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container div {
+    padding-bottom: 50px;
+  }
+}
